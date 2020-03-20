@@ -5,4 +5,34 @@
  Реализовать функцию возведения в куб суммы двух  целых чисел 
 
 
+Вопросы: 20,15,10,5,24
+20.Какое пространство имен использует системная библиотека C#?
+system
+15.Приведите синтаксис оператора выбора в общем виде. Проиллюстрируйте его фрагментом программы на языке C#. 
+using System;
 
+public enum Color { Red, Green, Blue }
+
+public class Example
+{
+   public static void Main()
+   {
+      Color c = (Color) (new Random()).Next(0, 3);
+      if (c == Color.Red)
+         Console.WriteLine("The color is red");
+      else if (c == Color.Green)
+         Console.WriteLine("The color is green");
+      else if (c == Color.Blue)
+         Console.WriteLine("The color is blue");   
+      else
+         Console.WriteLine("The color is unknown.");
+   }
+}
+
+10) Перечислите пять простых типов языка C#.
+int, float, decimal, bool, char
+
+5) Является ли среда CLR многоязычной?
+Да
+24. Приведите синтаксис описания пространства имен в общем виде. Проиллюстрируйте его фрагментом программы на языке C#. 
+namespace имя { члены_пространства_имен}
